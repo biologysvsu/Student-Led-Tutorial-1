@@ -17,13 +17,47 @@ Your tutorial should:
 ---
 
 ## **Data to Use**
-- **Input File**: Human genome data (subset to keep it manageable).
-  - Reference genome: **GRCh38 (Human Genome Assembly)**.
-  - Sequencing reads: A publicly available dataset from the 1000 Genomes Project (e.g., chr22).
-    - Download link for reads: [ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/data/](ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/data/)
-    - Use FASTQ files for paired-end reads.
-  - Download link for reference: [Ensembl Reference Genomes](https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/).
 
+### **Input Files**
+1. **Reference Genome**:
+   - **GRCh38 (Human Genome Assembly)**:
+     - Download the reference genome (FASTA) and annotation file (GTF) from Ensembl:
+       - [FASTA file](https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/)
+       - [GTF file](https://ftp.ensembl.org/pub/release-110/gtf/homo_sapiens/)
+   - Ensure the reference genome is indexed before alignment.
+
+2. **Sequencing Reads**:
+   - Use a publicly available RNA-seq dataset from GEO: [GSE186573](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573).
+   - Explore the dataset, which includes samples for:
+     - **CRC**: Colorectal cancer.
+     - **STAD**: Stomach adenocarcinoma.
+     - **NC**: Healthy donors (Normal Control).
+
+---
+
+### **Steps to Choose Samples**
+1. Scroll down on the GEO page and run the **SRA Run Selector**.
+2. Review the table of **GSM samples**, which provides information such as:
+   - **Sample accessions**: Begin with `GSM`.
+   - **Subject metadata**: Includes age, sex, and health condition.
+3. Identify and select two samples for analysis:
+   - At least one sample should be from a **healthy donor (NC)**.
+4. Locate the **SRR accessions** corresponding to your selected samples.
+   - Note: The SRR accession is required to download sequencing data.
+
+---
+
+### **Downloading Sequencing Reads**
+1. Click on the SRR accession for your chosen sample.
+   - The page may take a few minutes to load. Refresh if necessary.
+2. Navigate to the **FASTA/FASTQ download tab**.
+   - Most SRR files require the **SRA Toolkit** for download.
+3. Use the SRA Toolkit to download paired-end FASTQ files:
+   ```bash
+   # Example: Download paired-end reads for your chosen SRR accession
+   fastq-dump --split-files SRR11412215
+- Replace SRR11412215 with the actual SRR accession for your sample.
+4. Repeat this process for all selected samples.
 ---
 
 ## **Software Requirements**
@@ -41,7 +75,7 @@ Your tutorial should:
 ### **Part 1: Data Preparation**
 1. Access the provided links and download:
    - Reference genome.
-   - Sample FASTQ files (subset of chr22 or another interesting region).
+   - Sample FASTQ files
 2. Index the reference genome using Bowtie2:
    ```bash
    bowtie2-build reference.fasta reference_index
