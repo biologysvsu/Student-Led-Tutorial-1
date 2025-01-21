@@ -23,7 +23,6 @@ Your tutorial should:
    - **GRCh38 (Human Genome Assembly)**:
      - Download the reference genome (FASTA) and annotation file (GTF) from Ensembl:
        - [FASTA file](https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/)
-       - [GTF file](https://ftp.ensembl.org/pub/release-110/gtf/homo_sapiens/)
    - Ensure the reference genome is indexed before alignment.
 
 2. **Sequencing Reads**:
