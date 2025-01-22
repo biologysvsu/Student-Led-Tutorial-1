@@ -26,7 +26,7 @@ Your tutorial should:
    - Ensure the reference genome is indexed before alignment.
 
 2. **Sequencing Reads**:
-   - Use a publicly available RNA-seq dataset from GEO: [GSE186573](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573).
+   - Use a publicly available wgs-seq dataset from GEO: [GSE186573](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573).
    - Explore the dataset, which includes samples for:
      - **CRC**: Colorectal cancer.
      - **STAD**: Stomach adenocarcinoma.
