@@ -1,7 +1,7 @@
 # Student-Led-Tutorial-1
 # Task: Tutorial for Bowtie2, SAMtools, and Visualization with IGV (Web/Desktop) or Tablet
 # Date: Feb 13th
-## More informatation at: https://github.com/biologysvsu/biol443_syllabus/blob/main/tutorial.md
+## More information at: https://github.com/biologysvsu/biol443_syllabus/blob/main/tutorial.md
 
 ## **Objective**
 Prepare a hands-on tutorial for your peers on:
