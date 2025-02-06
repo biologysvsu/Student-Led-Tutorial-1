@@ -55,6 +55,7 @@ Your tutorial should:
 3. Use the SRA Toolkit to download paired-end FASTQ files:
    ```bash
    # Example: Download paired-end reads for your chosen SRR accession
+   module load sra-toolkit
    fastq-dump --split-files SRR11412215
 - Replace SRR11412215 with the actual SRR accession for your sample.
 - Healthy Donor: SRR16574653
