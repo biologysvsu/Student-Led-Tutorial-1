@@ -1,5 +1,10 @@
 # Tutorial for Bowtie2, SAMtools, and Visualization with IGV 
 # Date: Feb 13th
+1. Bowtie2 and SAMtools should already be downloaded
+2. IGV needs to be downloaded onto your computer
+3. **IGV**:
+   - **Desktop**: [Download IGV](https://software.broadinstitute.org/software/igv/download)
+   - **Web-based**: [Use IGV Web App](https://igv.org/app/)
 #In order to get all files in your workspace use:
   git clone [insert repository link]
 # Download the refrence genome (FASTA)
