@@ -3,7 +3,6 @@
 #In order to get all files in your workspace use:
   git clone [insert repository link]
 # Download the refrence genome (FASTA)
-'''Bash
 wget https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
 # Also downloand the two sequencing reads. 
 wget[]
