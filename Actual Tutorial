@@ -1,2 +1,5 @@
 # Tutorial for Bowtie2, SAMtools, and Visualization with IGV 
 # Date: Feb 13th
+#In order to get all files in your workspace use:
+  git clone [insert repository link]
+# You can create your own repository or use our example files
