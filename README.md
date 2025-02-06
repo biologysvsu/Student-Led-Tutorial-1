@@ -57,6 +57,7 @@ Your tutorial should:
    # Example: Download paired-end reads for your chosen SRR accession
    fastq-dump --split-files SRR11412215
 - Replace SRR11412215 with the actual SRR accession for your sample.
+- Healthy Donor: SRR16574653
 4. Repeat this process for all selected samples.
 ---
 
