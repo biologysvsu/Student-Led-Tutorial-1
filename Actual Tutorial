@@ -5,9 +5,28 @@
 3. **IGV**:
    - **Desktop**: [Download IGV](https://software.broadinstitute.org/software/igv/download)
    - **Web-based**: [Use IGV Web App](https://igv.org/app/)
+#Fork Student-Led-Tutorial-1 repository, this is where you can send your data after it is analyzed
 #In order to get all files in your workspace use:
   git clone [insert repository link]
 # Download the refrence genome (FASTA)
 wget https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
+Following the link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used. We used the first one.
 # Also downloand the two sequencing reads. 
-wget[]
+These can be searched for through https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573
+It shows publically avalable wgs-sew datasets from GEO.
+If you were to chose your own:
+   Scroll down from the link page and hit 'SRA run selector'
+   The table shown includes GSM samples, giving information such as sample accessions (begin with gsm) and metadata like age, sex, and health condition.
+   One sample for this tutorial should be a healthy donor (NC)
+  Find the SRR acession according to your chosen sample and click on it
+   Navigate to the FASTA/FASTQ download tab
+   ???Use the SRA toolkit to download paired-end-FASTQ files
+   module load sra-toolkit
+   fastq-dump --split-files SRR11412215
+Replace SRR11412215 with your SRR acession of your sample and do for both samples
+Ours:
+Healthy donor: SRR16574653
+Stage 3B donor: SRR16574627
+
+You can chose your own, but we provided examples here for your conveinence.
+START BACK UP WITH THE "data preperation" section
