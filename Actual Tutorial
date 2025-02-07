@@ -30,3 +30,9 @@ Stage 3B donor: SRR16574627
 
 You can chose your own, but we provided examples here for your conveinence.
 START BACK UP WITH THE "data preperation" section
+
+
+Test to see how to download the data into gitbash:
+wget https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&page=2&page_size=10&acc=SRR16574627&display=download/SRR16574653.fastq.gz
+wget https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&page=2&page_size=10&acc=SRR16574627&display=download/SRR16574627.fastq.gz
+
