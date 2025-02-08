@@ -32,6 +32,8 @@ You can chose your own, but we provided examples here for your conveinence.
 START BACK UP WITH THE "data preperation" section
 Edit the slurm script to include your email (anything else???)
 vi sra-download.slurm
+Replace current srr acession number with ine of interest (this will need to be done twice in order to get both of them into the software)
+Replace your-username in the STORAGE_DIR variable with your actual username.
 
 ADD SLURM CODE TO THIS REPOSITORY
 
