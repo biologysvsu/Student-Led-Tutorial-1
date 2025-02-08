@@ -1,17 +1,21 @@
-# Tutorial for Bowtie2, SAMtools, and Visualization with IGV 
-# Date: Feb 13th
+Tutorial for Bowtie2, SAMtools, and Visualization with IGV 
+Date: Feb 13th
+
+Required software: 
 1. Bowtie2 and SAMtools should already be downloaded
-2. IGV needs to be downloaded onto your computer
-3. **IGV**:
-   - **Desktop**: [Download IGV](https://software.broadinstitute.org/software/igv/download)
-   - **Web-based**: [Use IGV Web App](https://igv.org/app/)
-#Fork Student-Led-Tutorial-1 repository, this is where you can send your data after it is analyzed
+2. IGV needs to be downloaded onto your computer. heres how to do it:
+   - Desktop: [Download IGV](https://software.broadinstitute.org/software/igv/download)
+   - Web-based: [Use IGV Web App](https://igv.org/app/)
+
+First steps:
+Fork Student-Led-Tutorial-1 repository, this is where you can send your data after it is analyzed
 #In order to get all files in your workspace use:
-  git clone [insert repository link]
-# Download the refrence genome (FASTA)
+  git clone repositorylinkexample.com
+
+Download the refrence genome (FASTA)
 wget https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
-Following the link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used. We used the first one.
-# Also downloand the two sequencing reads. 
+Following this link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used. We used the first one.
+Also download two sequencing reads. 
 These can be searched for through https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573
 It shows publically avalable wgs-sew datasets from GEO.
 If you were to chose your own:
@@ -29,21 +33,20 @@ Healthy donor: SRR16574653
 Stage 3B donor: SRR16574627
 
 You can chose your own, but we provided examples here for your conveinence.
+
 START BACK UP WITH THE "data preperation" section
-Edit the slurm script to include your email (anything else???)
+Edit the slurm script to include your email, username, and SRR acession number in the appropriate spots like we have done in class before. The code to edit:
 vi sra-download.slurm
-Replace current srr acession number with ine of interest (this will need to be done twice in order to get both of them into the software)
-Replace your-username in the STORAGE_DIR variable with your actual username.
 
 Navigate to the directory where the script is located (if not already there):
-
 cd /path/to/your/script
+
 Submit the job to the SLURM scheduler:
-
 sbatch sra-download.slurm
-Once the job completes, check the output log file:
 
+Once the job completes, check the output log file:
 cat /ocean/projects/agr250001p/your-username/download_sra.log
+
 
 ADD SLURM CODE TO THIS REPOSITORY
 
