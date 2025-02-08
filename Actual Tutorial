@@ -35,6 +35,13 @@ vi sra-download.slurm
 Replace current srr acession number with ine of interest (this will need to be done twice in order to get both of them into the software)
 Replace your-username in the STORAGE_DIR variable with your actual username.
 
+Navigate to the directory where the script is located (if not already there):
+
+cd /path/to/your/script
+Submit the job to the SLURM scheduler:
+
+sbatch sra-download.slurm
+
 ADD SLURM CODE TO THIS REPOSITORY
 
 
