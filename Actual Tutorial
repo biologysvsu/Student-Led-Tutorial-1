@@ -41,6 +41,9 @@ cd /path/to/your/script
 Submit the job to the SLURM scheduler:
 
 sbatch sra-download.slurm
+Once the job completes, check the output log file:
+
+cat /ocean/projects/agr250001p/your-username/download_sra.log
 
 ADD SLURM CODE TO THIS REPOSITORY
 
