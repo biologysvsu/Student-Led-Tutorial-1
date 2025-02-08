@@ -4,7 +4,6 @@
 #SBATCH --time=00:10:00               # Time limit (10 minutes for this lightweight job)
 #SBATCH --ntasks=1                    # Use 1 task
 #SBATCH --mem=2G                      # Request 2 GB of memory
-#SBATCH --partition=standard          # Use the standard partition (ensure it has internet access)
 #SBATCH --mail-user=your-email@example.com  # Add your email address here
 #SBATCH --mail-type=ALL               # Send email notifications for all job states (BEGIN, END, FAIL)
 
