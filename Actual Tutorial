@@ -40,7 +40,7 @@ Stage 3B donor: SRR16574627
 
 You can chose your own, but we provided examples here for your conveinence.
 
-START BACK UP WITH THE "data preperation" section
+SLURM:
 Edit the slurm script to include your email, username, and SRR acession number in the appropriate spots like we have done in class before. The code to edit:
 vi sra-download.slurm
 You will also need to change the output name for each dataset
@@ -56,7 +56,11 @@ cat /ocean/projects/agr250001p/your-username/download_sra.log
 THE FOLLOWING IS COPIED FROM THE ASSIGNMENT REQUIREMENTS AND WILL NEED TO BE EDITIED. WE LIKELY NEED TO ADD MIRE DETAIL!
 
 Index the reference genome using Bowtie2:
-bowtie2-build reference.fasta reference_index
+bowtie2-build reference.fasta reference_index 
+replace refrence.fasta with the file name for the refrence data
+
+I HAVE NOT TESTED ANYTHING BEYOND THIS POINT
+
 Part 2: Mapping Reads
 
 Align the sequencing reads to the reference genome using Bowtie2:
