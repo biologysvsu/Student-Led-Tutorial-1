@@ -30,11 +30,9 @@ Stage 3B donor: SRR16574627
 
 You can chose your own, but we provided examples here for your conveinence.
 START BACK UP WITH THE "data preperation" section
-I also think we need to add the SRA download.slurm code? Like 99% sure thats how it gets downloaded into gitbash, we need to add this to the tutorial
-as well as how to edit it :( wanna be thorough
+Edit the slurm script to include your email (anything else???)
+vi sra-download.slurm
 
-
-look here
-https://github.com/biologysvsu/Week-3-repository/blob/main/slurm-instructions.md
+ADD SLURM CODE TO THIS REPOSITORY
 
 
