@@ -81,10 +81,11 @@ Part 4: Visualization:
 
 Load the reference genome and sorted BAM file in IGV (Desktop or Web-based).
 Highlight:
+From workling through the tutorial I found that the web version of IGV was easier for me to navigate, so maybe we encourage that during our tutorial 
 Coverage across interesting regions (e.g., BRCA1).
 Mismatches or SNPs in the alignments
 
 NOTES:
 ADD SLURM CODE TO THIS REPOSITORY
-DO WE NEED TO ADD PARTS ON SUBMITTING A JOB TO THE REPOSITORY? i think thats needed in order to open the data in IGV???
+DO WE NEED TO ADD PARTS ON SUBMITTING A JOB TO THE REPOSITORY? i think thats needed in order to open the data in IGV??? It does not been to be submitted, just need to add the reference genome and the data file
 
