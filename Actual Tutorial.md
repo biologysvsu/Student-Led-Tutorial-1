@@ -91,14 +91,17 @@ I HAVE NOT TESTED ANYTHING BEYOND THIS POINT
 
 # Part 2: Mapping Reads
 
-Align the sequencing reads to the reference genome using Bowtie2:
+1. Align the sequencing reads to the reference genome using Bowtie2:
+``` bash
 bowtie2 -x reference_index -1 reads_1.fastq -2 reads_2.fastq -S aligned.sam
+```
 Process the SAM file using SAMtools
 
-Convert to BAM:
-
+2. Convert to BAM:
+``` bash
 samtools view -Sb aligned.sam > aligned.bam
-Sort and index the BAM file:
+```
+3. Sort and index the BAM file:
 
 samtools sort aligned.bam -o sorted.bam
 samtools index sorted.bam
