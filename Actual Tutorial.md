@@ -4,10 +4,13 @@
 ## Required software: 
 1. Bowtie2 and SAMtools should already be downloaded
 Open by:
+
+``` bash
 module load bowtie2 # AND>>>???
 module load bcftools #?
+```
 
-2. IGV needs to be downloaded onto your computer. heres how to do it:
+3. IGV needs to be downloaded onto your computer. heres how to do it:
    - Desktop: [Download IGV](https://software.broadinstitute.org/software/igv/download)
    - Web-based: [Use IGV Web App](https://igv.org/app/)
 
