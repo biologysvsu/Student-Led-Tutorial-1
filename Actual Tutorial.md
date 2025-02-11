@@ -15,8 +15,12 @@ module load bcftools #?
 
 ### --- three dashes splits sections in markdown documents (md). For this to work, the file name should have ".md" at the end
 
-
-First steps:
+### the following synthax allow students to copy text directly from the tutorial (must remove # to work)
+### ``` bash
+### code
+### ```
+---
+# First steps:
 Fork Student-Led-Tutorial-1 repository, this is where you can send your data after it is analyzed
 #In order to get all files in your workspace use:
 
@@ -27,7 +31,7 @@ Log into your bridges account in gitbash and open your personal folder in ocean
 
 Download the refrence genome (FASTA)
 wget https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
-then gunzip the file
+then gunzip the file  # are we working on human data??
 Following this link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used. We used the first one.
 Also download two sequencing reads. 
 These can be searched for through https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573
