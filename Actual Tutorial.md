@@ -52,8 +52,8 @@ If you were to chose your own:
    fastq-dump --split-files SRR11412215
 Replace SRR11412215 with your SRR acession of your sample and do for both samples
 Ours:
-Healthy donor: SRR16574653
-Stage 3B donor: SRR16574627
+Healthy donor: SRR16574675
+Stage 2A CRC donor: SRR16574651
 
 You can chose your own, but we provided examples here for your conveinence.
 
