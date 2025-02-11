@@ -49,8 +49,10 @@ If you were to chose your own:
 Use the SRA toolkit to download paired-end-FASTQ files
 ``` bash
    module load sra-toolkit
-``` 
-   fastq-dump --split-files SRR11412215
+```
+``` bash
+fastq-dump --split-files SRR11412215
+```
 Replace SRR11412215 with your SRR acession of your sample and do for both samples
 Ours:
 Healthy donor: SRR16574675
