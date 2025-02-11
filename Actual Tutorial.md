@@ -6,8 +6,8 @@
 Open by:
 
 ``` bash
-module load bowtie2 # AND>>>???
-module load bcftools #?
+module load bowtie2 
+module load bcftools
 ```
 
 3. IGV needs to be downloaded onto your computer. heres how to do it:
