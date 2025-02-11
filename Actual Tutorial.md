@@ -112,11 +112,12 @@ samtools flagstat sorted.bam
 ``` 
 # Part 3: Visualization:
 
-Load the reference genome and sorted BAM file in IGV (Desktop or Web-based).
-Highlight:
+1. Load the reference genome and sorted BAM file in IGV (Desktop or Web-based).
+2. Highlight:
+ - Coverage across interesting regions (e.g., BRCA1).
+ - Mismatches or SNPs in the alignments
+
 From workling through the tutorial I found that the web version of IGV was easier for me to navigate, so maybe we encourage that during our tutorial 
-Coverage across interesting regions (e.g., BRCA1).
-Mismatches or SNPs in the alignments
 
 NOTES:
 ADD SLURM CODE TO THIS REPOSITORY
