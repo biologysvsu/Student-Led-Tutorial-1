@@ -48,7 +48,9 @@ If you were to chose your own:
   Find the SRR acession according to your chosen sample and click on it
    Navigate to the FASTA/FASTQ download tab
    ???Use the SRA toolkit to download paired-end-FASTQ files
+``` bash
    module load sra-toolkit
+``` 
    fastq-dump --split-files SRR11412215
 Replace SRR11412215 with your SRR acession of your sample and do for both samples
 Ours:
