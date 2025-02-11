@@ -83,18 +83,11 @@ cat/ocean/projects/agr250001p/your-username/download_sra.log
 ``` 
 THE FOLLOWING IS COPIED FROM THE ASSIGNMENT REQUIREMENTS AND WILL NEED TO BE EDITIED. WE LIKELY NEED TO ADD MIRE DETAIL!
 
-# Index the reference genome using Bowtie2 for both SRR data sets:
-- Heathly 
-``` bash
-bowtie2-build SRR16574675.fasta SRR16574675_index
-```
-- donor
-``` bash
-bowtie2-build SRR16574651.fasta SRR16574651_index
-``` 
-replace our SRR.fasta with your file name for the data
+# Index the reference genome using Bowtie2:
 
-I HAVE NOT TESTED ANYTHING BEYOND THIS POINT
+``` bash
+bowtie2-build Homo_sapiens.GRCh38.dna.alt.fa reference_index
+```
 
 # Part 2: Mapping Reads
 
