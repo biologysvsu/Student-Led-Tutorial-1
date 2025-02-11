@@ -33,7 +33,9 @@ Log into your bridges account in gitbash and open your personal folder in ocean
 /ocean/projects/agr250001p/your-psc-username
 
 Download the refrence genome (FASTA)
+``` bash
 wget https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
+```
 then gunzip the file  # are we working on human data??
 Following this link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used. We used the first one.
 Also download two sequencing reads. 
