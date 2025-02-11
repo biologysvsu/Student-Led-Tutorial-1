@@ -37,17 +37,14 @@ Download the refrence genome (FASTA)
 wget https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
 ```
 then gunzip the file  # are we working on human data??
-Following this link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used. We used the first one.
-Also download two sequencing reads. 
-These can be searched for through https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573
-It shows publically avalable wgs-sew datasets from GEO.
-If you were to chose your own:
-   Scroll down from the link page and hit 'SRA run selector'
+   - Following this link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used. We used the first one.Also download two sequencing reads. These can be searched for through https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573 It shows publically avalable wgs-sew datasets from GEO.
+  - If you were to chose your own:
+Scroll down from the link page and hit 'SRA run selector'
    The table shown includes GSM samples, giving information such as sample accessions (begin with gsm) and metadata like age, sex, and health condition.
    One sample for this tutorial should be a healthy donor (NC)
   Find the SRR acession according to your chosen sample and click on it
    Navigate to the FASTA/FASTQ download tab
-   ???Use the SRA toolkit to download paired-end-FASTQ files
+   - Use the SRA toolkit to download paired-end-FASTQ files
 ``` bash
    module load sra-toolkit
 ``` 
