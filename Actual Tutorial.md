@@ -1,17 +1,25 @@
-Tutorial for Bowtie2, SAMtools, and Visualization with IGV 
-Date: Feb 13th
+# Tutorial for Bowtie2, SAMtools, and Visualization with IGV 
+# Date: Feb 13th
 
-Required software: 
+## Required software: 
 1. Bowtie2 and SAMtools should already be downloaded
 Open by:
-module load bowtie2 AND>>>???
+module load bowtie2 # AND>>>???
+module load bcftools #?
+
 2. IGV needs to be downloaded onto your computer. heres how to do it:
    - Desktop: [Download IGV](https://software.broadinstitute.org/software/igv/download)
    - Web-based: [Use IGV Web App](https://igv.org/app/)
 
+---
+
+### --- three dashes splits sections in markdown documents (md). For this to work, the file name should have ".md" at the end
+
+
 First steps:
 Fork Student-Led-Tutorial-1 repository, this is where you can send your data after it is analyzed
 #In order to get all files in your workspace use:
+
   git clone repositorylinkexample.com
 
 Log into your bridges account in gitbash and open your personal folder in ocean
