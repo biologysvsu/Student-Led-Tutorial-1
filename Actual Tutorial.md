@@ -50,13 +50,15 @@ Use the SRA toolkit to download paired-end-FASTQ files
 ``` bash
    module load sra-toolkit
 ```
+Healthy our example
 ``` bash
-fastq-dump --split-files SRR11412215
+fastq-dump --split-files SRR16574675
 ```
-Replace SRR11412215 with your SRR acession of your sample and do for both samples
-Ours:
-Healthy donor: SRR16574675
-Stage 2A CRC donor: SRR16574651
+Stage 2A CRC donor
+``` bash
+fastq-dump --split-files SRR16574651
+```
+-if working with your own Replace SRR with your SRR acession of your sample and do for both samples
 
 You can chose your own, but we provided examples here for your conveinence.
 
