@@ -85,7 +85,7 @@ replace refrence.fasta with the file name for the refrence data
 
 I HAVE NOT TESTED ANYTHING BEYOND THIS POINT
 
-Part 2: Mapping Reads
+# Part 2: Mapping Reads
 
 Align the sequencing reads to the reference genome using Bowtie2:
 bowtie2 -x reference_index -1 reads_1.fastq -2 reads_2.fastq -S aligned.sam
@@ -101,7 +101,7 @@ samtools index sorted.bam
 Compute basic statistics:
 
 samtools flagstat sorted.bam
-Part 4: Visualization:
+# Part 4: Visualization:
 
 Load the reference genome and sorted BAM file in IGV (Desktop or Web-based).
 Highlight:
