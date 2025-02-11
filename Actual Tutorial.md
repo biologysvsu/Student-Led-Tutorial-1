@@ -83,7 +83,7 @@ cat/ocean/projects/agr250001p/your-username/download_sra.log
 ``` 
 THE FOLLOWING IS COPIED FROM THE ASSIGNMENT REQUIREMENTS AND WILL NEED TO BE EDITIED. WE LIKELY NEED TO ADD MIRE DETAIL!
 
-Index the reference genome using Bowtie2 for both SRR data sets:
+# Index the reference genome using Bowtie2 for both SRR data sets:
 - Heathly 
 ``` bash
 bowtie2-build SRR16574675.fasta SRR16574675_index
