@@ -23,7 +23,7 @@ module load bcftools
 ### code
 ### ```
 ---
-# First steps:
+# Part 1:
 Fork Student-Led-Tutorial-1 repository, this is where you can send your data after it is analyzed
 #In order to get all files in your workspace use:
 ``` bash
