@@ -10,7 +10,7 @@ module load bowtie2
 module load bcftools
 ```
 
-3. IGV needs to be downloaded onto your computer. heres how to do it:
+2. IGV needs to be downloaded onto your computer. Here is how to do it:
    - Desktop: [Download IGV](https://software.broadinstitute.org/software/igv/download)
    - Web-based: [Use IGV Web App](https://igv.org/app/)
 
