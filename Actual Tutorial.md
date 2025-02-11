@@ -91,23 +91,25 @@ I HAVE NOT TESTED ANYTHING BEYOND THIS POINT
 
 # Part 2: Mapping Reads
 
-1. Align the sequencing reads to the reference genome using Bowtie2:
+ Align the sequencing reads to the reference genome using Bowtie2:
 ``` bash
 bowtie2 -x reference_index -1 reads_1.fastq -2 reads_2.fastq -S aligned.sam
 ```
-Process the SAM file using SAMtools
+# Process the SAM file using SAMtools
 
-2. Convert to BAM:
+1. Convert to BAM:
 ``` bash
 samtools view -Sb aligned.sam > aligned.bam
 ```
-3. Sort and index the BAM file:
-
+2. Sort and index the BAM file:
+``` bash
 samtools sort aligned.bam -o sorted.bam
 samtools index sorted.bam
-Compute basic statistics:
-
+``` 
+3.Compute basic statistics:
+``` bash
 samtools flagstat sorted.bam
+``` 
 # Part 3: Visualization:
 
 Load the reference genome and sorted BAM file in IGV (Desktop or Web-based).
