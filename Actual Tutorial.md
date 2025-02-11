@@ -92,8 +92,13 @@ bowtie2-build Homo_sapiens.GRCh38.dna.alt.fa reference_index
 # Part 2: Mapping Reads
 
  Align the sequencing reads to the reference genome using Bowtie2:
+- Healthy
 ``` bash
-bowtie2 -x reference_index -1 reads_1.fastq -2 reads_2.fastq -S aligned.sam
+bowtie2 -x reference_index -1 SRR16574675_1.fastq -2 SRR16574675_2.fastq -S aligned.sam
+```
+- Donor
+``` bash
+bowtie2 -x reference_index -1 SRR16574651_1.fastq -2 SRR16574651_2.fastq -S aligned.sam
 ```
 # Process the SAM file using SAMtools
 
