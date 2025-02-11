@@ -101,7 +101,7 @@ samtools index sorted.bam
 Compute basic statistics:
 
 samtools flagstat sorted.bam
-# Part 4: Visualization:
+# Part 3: Visualization:
 
 Load the reference genome and sorted BAM file in IGV (Desktop or Web-based).
 Highlight:
