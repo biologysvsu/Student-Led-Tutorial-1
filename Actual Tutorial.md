@@ -59,21 +59,29 @@ You can chose your own, but we provided examples here for your conveinence.
 
 SLURM:
 Edit the slurm script to include your email, username, and SRR acession number in the appropriate spots like we have done in class before. The code to edit:
+``` bash
 vi sra-download.slurm
+```
 You will also need to change the output name for each dataset
 Navigate to the directory where the script is located (if not already there):
+``` bash
 cd /path/to/your/script
-
+```
 Submit the job to the SLURM scheduler:
+``` bash
 sbatch sra-download.slurm
+```
 
 Once the job completes, check the output log file:
-cat /ocean/projects/agr250001p/your-username/download_sra.log
-
+``` bash
+cat/ocean/projects/agr250001p/your-username/download_sra.log
+``` 
 THE FOLLOWING IS COPIED FROM THE ASSIGNMENT REQUIREMENTS AND WILL NEED TO BE EDITIED. WE LIKELY NEED TO ADD MIRE DETAIL!
 
 Index the reference genome using Bowtie2:
-bowtie2-build reference.fasta reference_index 
+``` bash
+bowtie2-build reference.fasta reference_index
+``` 
 replace refrence.fasta with the file name for the refrence data
 
 I HAVE NOT TESTED ANYTHING BEYOND THIS POINT
