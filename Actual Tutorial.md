@@ -45,7 +45,8 @@ If you were to chose your own:
    One sample for this tutorial should be a healthy donor (NC)
   Find the SRR acession according to your chosen sample and click on it
    Navigate to the FASTA/FASTQ download tab
-   - Use the SRA toolkit to download paired-end-FASTQ files
+
+Use the SRA toolkit to download paired-end-FASTQ files
 ``` bash
    module load sra-toolkit
 ``` 
