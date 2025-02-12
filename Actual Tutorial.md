@@ -157,7 +157,7 @@ Host name: bridges2.psc.edu
  - Coverage across interesting regions (e.g., BRCA1).
  - Mismatches or SNPs in the alignments
 
-From workling through the tutorial I found that the web version of IGV was easier for me to navigate, so maybe we encourage that during our tutorial 
+
 
 NOTES:
 ADD SLURM CODE TO THIS REPOSITORY
