@@ -48,7 +48,9 @@ then gunzip the file
 gunzip Homo_sapiens.GRCh38.dna.alt.fa.gz
 ```
    - Following this link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used.
-   - Also download two sequencing reads. These can be searched for through https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573 It shows publically avalable wgs-sew datasets from GEO.
+   - Also need to download two sequencing reads. These can be searched for through https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573
+   - It shows publically avalable wgs-sew datasets from GEO.
+You can chose your own, but we provided examples here for your conveinence.
 
 If you were to chose your own:
 - Scroll down from the link page and hit 'SRA run selector'
@@ -69,9 +71,8 @@ Stage 2A CRC donor
 ``` bash
 fastq-dump --split-files SRR16574651
 ```
--if working with your own Replace SRR with your SRR acession of your sample and do for both samples
+-If working with your own Replace SRR with your SRR acession of your sample and do for both samples.
 
-You can chose your own, but we provided examples here for your conveinence.
 
 SLURM:
 Edit the slurm script to include your email, username, and SRR acession number in the appropriate spots like we have done in class before. The code to edit:
