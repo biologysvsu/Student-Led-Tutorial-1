@@ -33,8 +33,12 @@ Fork Student-Led-Tutorial-1 repository, this is where you can send your data aft
   git clone repositorylinkexample.com
 ```
 Log into your bridges account in gitbash and open your personal folder in ocean
-/ocean/projects/agr250001p/your-psc-username
-
+``` bash
+ssh your-username@bridges2.psc.edu
+```
+``` bash
+cd /ocean/projects/agr250001p/your-psc-username
+```
 Download the refrence genome (FASTA)
 ``` bash
 wget https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
