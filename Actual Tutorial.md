@@ -137,6 +137,8 @@ samtools view -Sb CRC.sam > CRC.bam
 ``` bash
 samtools sort CRC.bam -o sorted-CRC.bam
 samtools index sorted-CRC.bam
+```
+``` bash
 samtools sort NC.bam -o sorted-NC.bam
 samtools index sorted-NC.bam
 ``` 
