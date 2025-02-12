@@ -105,8 +105,8 @@ bowtie2-build Homo_sapiens.GRCh38.dna.alt.fa reference_index
 
   Process a subset of each dataset with Bowtie2. Repeat for both healthy (NC) and cancer (CRC) donors:
 ``` bash
-head -n 40000 SRR16574675_1.fastq > NC_1.fastq
-head -n 40000 SRR16574675_2.fastq > NC_2.fastq
+seqtk sample -s100 SRR16574675_1.fastq 0.1 > NC_1.fastq
+seqtk sample -s100 SRR16574675_2.fastq 0.1 > NC_2.fastq
 ```
 ``` bash
 head -n 40000 SRR16574651_1.fastq > CRC_1.fastq
