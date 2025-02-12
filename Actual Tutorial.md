@@ -7,12 +7,15 @@ Open by:
 
 ``` bash
 module load bowtie2 
-module load bcftools
+module load samtools
 ```
 
 2. IGV needs to be downloaded onto your computer. Here are the links:
    - Desktop: [Download IGV](https://software.broadinstitute.org/software/igv/download)
    - Web-based: [Use IGV Web App](https://igv.org/app/)
+
+3. Windows users may need WinSCP to upload their files to IGV.
+   - [Download WinSCP](https://winscp.net/eng/index.php) 
 
 ---
 
@@ -91,31 +94,60 @@ bowtie2-build Homo_sapiens.GRCh38.dna.alt.fa reference_index
 
 # Part 2: Mapping Reads
 
+- (i could not get aligning to work this way or with slurm. it did work when i used a shorter section of each fastq file, so they were probably too big.)
+
+  Process a subset of each dataset with Bowtie2. Repeat for both healthy (NC) and cancer (CRC) donors:
+``` bash
+head -n 40000 SRR16574675_1.fastq > NC_1.fastq
+head -n 40000 SRR16574675_2.fastq > NC_2.fastq
+```
+``` bash
+head -n 40000 SRR16574651_1.fastq > CRC_1.fastq
+head -n 40000 SRR16574651_2.fastq > CRC_2.fastq
+```
+
  Align the sequencing reads to the reference genome using Bowtie2:
-- Healthy
+- Healthy (NC)
 ``` bash
-bowtie2 -x reference_index -1 SRR16574675_1.fastq -2 SRR16574675_2.fastq -S aligned.sam
+bowtie2 --very-fast-local -p 16 -x reference_index -1 NC_1.fastq -2 NC_2.fastq -S NC.sam
 ```
-- Donor
+- Cancer (CRC)
 ``` bash
-bowtie2 -x reference_index -1 SRR16574651_1.fastq -2 SRR16574651_2.fastq -S aligned.sam
+bowtie2 --very-fast-local -p 16 -x reference_index -1 CRC_1.fastq -2 CRC_2.fastq -S CRC.sam
 ```
+- (not sure if jorge wants us to run commands locally, we could ask him. it works non-locally but the results are different.)
+  
 # Process the SAM file using SAMtools
 
 1. Convert to BAM:
 ``` bash
-samtools view -Sb aligned.sam > aligned.bam
+samtools view -Sb NC.sam > NC.bam
 ```
-2. Sort and index the BAM file:
 ``` bash
-samtools sort aligned.bam -o sorted.bam
-samtools index sorted.bam
+samtools view -Sb CRC.sam > CRC.bam
+```
+2. Sort and index the BAM file for both healthy and cancer donors:
+``` bash
+samtools sort sample-name.bam -o sorted-sample.bam
+samtools index sorted-sample.bam
 ``` 
 3.Compute basic statistics:
 ``` bash
-samtools flagstat sorted.bam
+samtools flagstat sorted-sample.bam
 ``` 
 # Part 3: Visualization:
+
+- Linux, Mac OS: Transfer the files to your computer. Remember to do this for both NC and CRC files!
+``` bash
+scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam .
+scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam.bai .
+```
+
+- Windows: Use your Bridges2 credentials to log in to WinSCP.
+File protocol: SCP
+Host name: bridges2.psc.edu
+- If not in our shared directory, click on "Find Files" and in the "Search in" box, type /ocean/projects/agr250001p/your-user
+- Find your sorted sample files ending in .bam and .bam.bai and download them.
 
 1. Load the reference genome and sorted BAM file in IGV (Desktop or Web-based).
 2. Highlight:
