@@ -109,8 +109,8 @@ seqtk sample -s100 SRR16574675_1.fastq 0.1 > NC_1.fastq
 seqtk sample -s100 SRR16574675_2.fastq 0.1 > NC_2.fastq
 ```
 ``` bash
-head -n 40000 SRR16574651_1.fastq > CRC_1.fastq
-head -n 40000 SRR16574651_2.fastq > CRC_2.fastq
+seqtk sample -s100 SRR16574651_1.fastq 0.1 > CRC_1.fastq
+seqtk sample -s100 SRR16574651_2.fastq 0.1 > CRC_2.fastq
 ```
 
  Align the sequencing reads to the reference genome using Bowtie2:
