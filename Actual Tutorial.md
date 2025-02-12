@@ -63,11 +63,11 @@ Use the SRA toolkit to download paired-end-FASTQ files
 ``` bash
    module load sra-toolkit
 ```
-Healthy our example
+Healthy Example:
 ``` bash
 fastq-dump --split-files SRR16574675
 ```
-Stage 2A CRC donor
+Stage 2A CRC Donor Example:
 ``` bash
 fastq-dump --split-files SRR16574651
 ```
