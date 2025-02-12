@@ -128,12 +128,16 @@ samtools view -Sb CRC.sam > CRC.bam
 ```
 2. Sort and index the BAM file for both healthy and cancer donors:
 ``` bash
-samtools sort sample-name.bam -o sorted-sample.bam
-samtools index sorted-sample.bam
+samtools sort CRC.bam -o sorted-CRC.bam
+samtools index sorted-CRC.bam
+```  bash
+samtools sort NC.bam -o sorted-NC.bam
+samtools index sorted-NC.bam
 ``` 
 3.Compute basic statistics:
 ``` bash
-samtools flagstat sorted-sample.bam
+samtools flagstat sorted-CRC.bam
+samtools flagstat sorted-NC.bam
 ``` 
 # Part 3: Visualization:
 
