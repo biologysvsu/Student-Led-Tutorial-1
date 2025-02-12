@@ -118,13 +118,17 @@ seqtk sample -s100 SRR16574651_2.fastq 0.1 > CRC_2.fastq
 ```
 
  Align the sequencing reads to the reference genome using Bowtie2:
+``` bash
+module load bowtie
+``` 
+ 
 - Healthy (NC)
 ``` bash
-bowtie2 --very-fast-local -p 16 -x reference_index -1 NC_1.fastq -2 NC_2.fastq -S NC.sam
+bowtie2 --very-fast-local -p 16 -x human_bowtie_reference -1 NC_1.fastq -2 NC_2.fastq -S NC.sam
 ```
 - Cancer (CRC)
 ``` bash
-bowtie2 --very-fast-local -p 16 -x reference_index -1 CRC_1.fastq -2 CRC_2.fastq -S CRC.sam
+bowtie2 --very-fast-local -p 16 -x human_bowtie_reference -1 CRC_1.fastq -2 CRC_2.fastq -S CRC.sam
 ```
 - (not sure if jorge wants us to run commands locally, we could ask him. it works non-locally but the results are different.)
   
