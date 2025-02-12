@@ -88,7 +88,7 @@ Once the job completes, check the output log file:
 ``` bash
 cat/ocean/projects/agr250001p/your-username/download_sra.log
 ``` 
-THE FOLLOWING IS COPIED FROM THE ASSIGNMENT REQUIREMENTS AND WILL NEED TO BE EDITIED. WE LIKELY NEED TO ADD MIRE DETAIL!
+
 
 # Index the reference genome using Bowtie2:
 
@@ -97,8 +97,6 @@ bowtie2-build Homo_sapiens.GRCh38.dna.alt.fa reference_index
 ```
 
 # Part 2: Mapping Reads
-
-- (i could not get aligning to work this way or with slurm. it did work when i used a shorter section of each fastq file, so they were probably too big.)
 
   Process a subset of each dataset with Bowtie2. Repeat for both healthy (NC) and cancer (CRC) donors:
 ``` bash
