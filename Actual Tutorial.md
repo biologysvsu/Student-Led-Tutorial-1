@@ -38,7 +38,7 @@ ssh your-username@bridges2.psc.edu
 ```
 To avoid a slurm script we are going to use interact:
 ``` bash
-interact -t 3:00:00 –ntasks-per-node=16  --mem=31G
+interact -t 3:00:00 –-ntasks-per-node=16  --mem=31G
 ```
 ``` bash
 cd /ocean/projects/agr250001p/your-psc-username
