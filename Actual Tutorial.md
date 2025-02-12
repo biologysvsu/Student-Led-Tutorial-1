@@ -157,7 +157,10 @@ samtools flagstat sorted-NC.bam
 ``` 
 # Part 3: Visualization:
 
-- Linux, Mac OS: Transfer the files to your computer. Remember to do this for both NC and CRC files!
+- Files must be transferred to your computer to be visualized:
+     1. ``` bash
+        exit"
+        ```
 ``` bash
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam .
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam.bai .
