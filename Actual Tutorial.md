@@ -25,7 +25,7 @@ ssh your-username@bridges2.psc.edu
 ```
 To avoid a slurm script we are going to use interact:
 ``` bash
-interact -t 3:00:00 –-ntasks-per-node=16  --mem=31G
+interact -t 3:00:00 --ntasks-per-node=16  --mem=31G
 ```
 The reference genome has been provided for you guys for effeciency, but if you were to download your own reference genome you would follow the steps below:
 
@@ -112,6 +112,10 @@ bowtie2 --very-fast-local -p 16 -x human_bowtie_reference -1 CRC_1.fastq -2 CRC_
   
 # Process the SAM file using SAMtools
 We now need to convert our .sam files to .bam files so that they can be used by the IGV software.
+
+``` bash
+module load samtools
+``` 
 
 1. Convert to BAM:
 ``` bash
