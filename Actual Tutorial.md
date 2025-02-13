@@ -42,7 +42,7 @@ interact -t 3:00:00 –-ntasks-per-node=16  --mem=31G
 ```
 The reference genome has been provided for you guys for effeciency, but if you wer to download your own reference genome you would follow the steps below:
 
-**hERE ARE THE STEPS BUT THEY HAVE ALREADY BEEN DONE FOR YOU SO WE ARE GONNA JUMP AHEAD**
+**Here are the steps if you were to do this yourself. We have already done this, so you can skip ahead**
 ``` bash
 cd /ocean/projects/agr250001p/your-psc-username
 ```
