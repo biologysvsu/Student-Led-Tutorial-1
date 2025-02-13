@@ -161,6 +161,7 @@ Here you will have to change the "sorted-sample" to the sorted-NC and sorted-CRC
 
 .bam and .bam.bai need to be kept together
 
+
 **WE ARE NOW READY FOR IGV**
 
 Please open the IGV software on your computer. 
