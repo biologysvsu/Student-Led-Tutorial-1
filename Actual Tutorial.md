@@ -178,10 +178,3 @@ Host name: bridges2.psc.edu
 2. Highlight:
  - Coverage across interesting regions (e.g., BRCA1).
  - Mismatches or SNPs in the alignments
-
-
-
-NOTES:
-ADD SLURM CODE TO THIS REPOSITORY
-DO WE NEED TO ADD PARTS ON SUBMITTING A JOB TO THE REPOSITORY? i think thats needed in order to open the data in IGV??? It does not been to be submitted, just need to add the reference genome and the data file
-
