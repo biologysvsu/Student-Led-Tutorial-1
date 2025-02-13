@@ -148,11 +148,10 @@ samtools flagstat sorted-NC.bam
 ``` 
 # Part 3: Visualization:
 - Files must be transferred to your computer to be visualized:
-     1. If you are not in the interact computer then use:
-        
-      ``` bash
-        exit
-        ```
+     1. You should still be in the interact verion of the HPC, but if not then:
+   ``` bash
+   exit
+   ``` 
 2. To ensure that you are able to find your downloads use:
    ``` bash
    pwd
