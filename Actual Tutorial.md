@@ -79,7 +79,7 @@ Stage 2A CRC Donor Example:
 fastq-dump --split-files SRR16574651
 ```
 
-**HERE IS WHERE WE WILL PICK BACK UP**
+**Here is where we will pick things back up**
 
 # Copying the necessary files to your computer 
 
@@ -149,7 +149,7 @@ samtools flagstat sorted-NC.bam
 ``` 
 # Part 3: Visualization:
 - Files must be transferred to your computer to be visualized:
-     1. You should still be in the interact verion of the HPC, but if not then:
+     1. You no longer need to be in the interact, instead you should be in your desktop
    ``` bash
    exit
    ``` 
@@ -171,6 +171,7 @@ Here you will have to change the "sorted-sample" to the sorted-NC and sorted-CRC
 .bam and .bam.bai need to be kept together
 
 **WE ARE NOW READY FOR IGV**
+
 Please open the IGV software on your computer. 
 
 Click "Files" in the upper left corner. 
