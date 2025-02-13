@@ -152,10 +152,10 @@ samtools flagstat sorted-NC.bam
 
  We now need to download the files to our computers for them to be used in IGV.
  ``` bash
-scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam .
+scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/tutorial_1_data/sorted-sample.bam .
 ``` 
 ``` bash
-scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam.bai .
+scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/tutorial_1_data/sorted-sample.bam.bai .
 ```
 Here you will have to change the "sorted-sample" to the sorted-NC and sorted-CRC.
 
