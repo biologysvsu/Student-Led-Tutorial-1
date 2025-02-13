@@ -59,7 +59,7 @@ gunzip Homo_sapiens.GRCh38.dna.alt.fa.gz
    - It shows publically avalable wgs-sew datasets from GEO.
 You can choose your own, but we provided examples here for your conveinence.
 
-If you were to ch-ose your own:
+If you were to choose your own:
 - Scroll down from the link page and hit 'SRA run selector'
    The table shown includes GSM samples, giving information such as sample accessions (begin with gsm) and metadata like age, sex, and health condition.
    One sample for this tutorial should be a healthy donor (NC)
