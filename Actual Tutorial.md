@@ -159,7 +159,7 @@ samtools flagstat sorted-NC.bam
    3. Please note where you will be locally dowloading these files.
 
  We now need to downlaod the files to our computers for them to be used in IGV.
- 1. ``` bash
+ ``` bash
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam .
 ``` 
 ``` bash
@@ -172,7 +172,7 @@ Here you will have to change the "sorted-sample" to the sorted-NC and sorted-CRC
 **WE ARE NOW READY FOR IGV**
 Please open the IGV software on your computer. 
 
-Once click "Files" in the upper left corner. 
+Click "Files" in the upper left corner. 
 
 Then click "Load from file..."
 
