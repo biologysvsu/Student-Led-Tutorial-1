@@ -147,7 +147,6 @@ samtools flagstat sorted-CRC.bam
 samtools flagstat sorted-NC.bam
 ``` 
 # Part 3: Visualization:
-
 - Files must be transferred to your computer to be visualized:
      1. If you are not in the interact computer then use:
       ``` bash
@@ -166,15 +165,27 @@ scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sort
 ``` bash
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam.bai .
 ```
-Here you will have to cahnge the "sorted-sample" to the sorted-NC and sorted-CRC.
+Here you will have to change the "sorted-sample" to the sorted-NC and sorted-CRC.
 
-- Windows: Use your Bridges2 credentials to log in to WinSCP.
-File protocol: SCP
-Host name: bridges2.psc.edu
-- If not in our shared directory, click on "Find Files" and in the "Search in" box, type /ocean/projects/agr250001p/your-user
-- Find your sorted sample files ending in .bam and .bam.bai and download them.
+.bam and .bam.bai need to be kept together
 
-1. Load the reference genome and sorted BAM file in IGV (Desktop or Web-based).
-2. Highlight:
- - Coverage across interesting regions (e.g., BRCA1).
- - Mismatches or SNPs in the alignments
+**WE ARE NOW READY FOR IGV**
+Please open the IGV software on your computer. 
+
+Once click "Files" in the upper left corner. 
+
+Then click "Load from file..."
+
+Navigate to where you downloaded your .bam and .bam.bai files for both NC and CRC.
+
+You now need to add all 4 files to IGV by clicking on the files and clicking "Open"
+
+Repeat for all 4 necessary files.
+
+Depending on what order tyou added your files you will see both the healthy genome and the genome with cancer displayed. 
+
+Zoom to see the coverage and alignments. 
+
+If you zoom in enough, you will be able to see the sequence and the bases. 
+
+Play around and see what you are able to visualize. 
