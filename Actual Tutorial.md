@@ -18,14 +18,6 @@ module load samtools
    - [Download WinSCP](https://winscp.net/eng/index.php) 
 
 ---
-
-### --- three dashes splits sections in markdown documents (md). For this to work, the file name should have ".md" at the end
-
-### the following synthax allow students to copy text directly from the tutorial (must remove # to work)
-### ``` bash
-### code
-### ```
----
 # Part 1:
 Fork Student-Led-Tutorial-1 repository, this is where you can send your data after it is analyzed
 #In order to get all files in your workspace use:
@@ -40,7 +32,7 @@ To avoid a slurm script we are going to use interact:
 ``` bash
 interact -t 3:00:00 –-ntasks-per-node=16  --mem=31G
 ```
-The reference genome has been provided for you guys for effeciency, but if you wer to download your own reference genome you would follow the steps below:
+The reference genome has been provided for you guys for effeciency, but if you were to download your own reference genome you would follow the steps below:
 
 **Here are the steps if you were to do this yourself. We have already done this, so you can skip ahead**
 ``` bash
@@ -79,7 +71,7 @@ Stage 2A CRC Donor Example:
 fastq-dump --split-files SRR16574651
 ```
 
-**Here is where we will pick things back up**
+**Here is where we will pick things back up.**
 
 # Copying the necessary files to your computer 
 
