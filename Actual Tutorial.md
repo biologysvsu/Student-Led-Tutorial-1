@@ -149,6 +149,7 @@ samtools flagstat sorted-NC.bam
 # Part 3: Visualization:
 - Files must be transferred to your computer to be visualized:
      1. If you are not in the interact computer then use:
+        
       ``` bash
         exit
         ```
