@@ -81,13 +81,22 @@ fastq-dump --split-files SRR16574651
 
 **HERE IS WHERE WE WILL PICK BACK UP**
 
-# Index the reference genome using Bowtie2:
+# Copying the necessary files to your computer 
+1. You should still be in the interact verion of the HPC, but if not then:
+   ``` bash
+   exit
+   ``` 
+2. Now enter this to copy the necessary files:
+   ``` bash
+    cp -r /ocean/projects/agr250001p/shared/tutorial-data/tutorial_1_data/ .
+    ```
+3. Ensure the files were properly copied over:
+   ``` bash
+   ls
+   ```
+   
 
-``` bash
-bowtie2-build Homo_sapiens.GRCh38.dna.alt.fa reference_index
-```
-
-# Part 2: Mapping Reads
+# Mapping Reads
 
   Process a subset of each dataset with Bowtie2. Repeat for both healthy (NC) and cancer (CRC) donors:
 ``` bash
@@ -104,17 +113,17 @@ seqtk sample -s100 SRR16574651_2.fastq 0.5 > CRC_2.fastq
 module load bowtie
 ``` 
  
-- Healthy (NC)
+- For our the helathy genome (NC)
 ``` bash
 bowtie2 --very-fast-local -p 16 -x human_bowtie_reference -1 NC_1.fastq -2 NC_2.fastq -S NC.sam
 ```
-- Cancer (CRC)
+- For the cancer genome (CRC)
 ``` bash
 bowtie2 --very-fast-local -p 16 -x human_bowtie_reference -1 CRC_1.fastq -2 CRC_2.fastq -S CRC.sam
 ```
-- (not sure if jorge wants us to run commands locally, we could ask him. it works non-locally but the results are different.)
   
 # Process the SAM file using SAMtools
+We now need to convert our .sam files to .bam files so that they can be used by the IGV software.
 
 1. Convert to BAM:
 ``` bash
@@ -140,18 +149,24 @@ samtools flagstat sorted-NC.bam
 # Part 3: Visualization:
 
 - Files must be transferred to your computer to be visualized:
-     1. ``` bash
+     1. If you are not in the interact computer then use:
+      ``` bash
         exit
         ```
-2. ``` bash
+2. To ensure that you are able to find your downloads use:
+   ``` bash
    pwd
    ```
    3. Please note where you will be locally dowloading these files.
-   
-``` bash
+
+ We now need to downlaod the files to our computers for them to be used in IGV.
+ 1. ``` bash
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam .
+``` 
+``` bash
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam.bai .
 ```
+Here you will have to cahnge the "sorted-sample" to the sorted-NC and sorted-CRC.
 
 - Windows: Use your Bridges2 credentials to log in to WinSCP.
 File protocol: SCP
