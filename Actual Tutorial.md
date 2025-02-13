@@ -109,12 +109,12 @@ bowtie2-build Homo_sapiens.GRCh38.dna.alt.fa reference_index
 
   Process a subset of each dataset with Bowtie2. Repeat for both healthy (NC) and cancer (CRC) donors:
 ``` bash
-seqtk sample -s100 SRR16574675_1.fastq 0.1 > NC_1.fastq
-seqtk sample -s100 SRR16574675_2.fastq 0.1 > NC_2.fastq
+seqtk sample -s100 SRR16574675_1.fastq 0.5 > NC_1.fastq
+seqtk sample -s100 SRR16574675_2.fastq 0.5 > NC_2.fastq
 ```
 ``` bash
-seqtk sample -s100 SRR16574651_1.fastq 0.1 > CRC_1.fastq
-seqtk sample -s100 SRR16574651_2.fastq 0.1 > CRC_2.fastq
+seqtk sample -s100 SRR16574651_1.fastq 0.5 > CRC_1.fastq
+seqtk sample -s100 SRR16574651_2.fastq 0.5 > CRC_2.fastq
 ```
 
  Align the sequencing reads to the reference genome using Bowtie2:
@@ -159,8 +159,13 @@ samtools flagstat sorted-NC.bam
 
 - Files must be transferred to your computer to be visualized:
      1. ``` bash
-        exit"
+        exit
         ```
+2. ``` bash
+   pwd
+   ```
+   3. Please note where you will be locally dowloading these files.
+   
 ``` bash
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam .
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam.bai .
