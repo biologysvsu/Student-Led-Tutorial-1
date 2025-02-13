@@ -82,10 +82,11 @@ fastq-dump --split-files SRR16574651
 **HERE IS WHERE WE WILL PICK BACK UP**
 
 # Copying the necessary files to your computer 
-1. You should still be in the interact verion of the HPC, but if not then:
-   ``` bash
-   exit
-   ``` 
+
+1. Navigate to:
+    ``` bash
+    cd /oceean/projects/agr250001p/your-username
+     ``` 
 2. Now enter this to copy the necessary files:
    ``` bash
     cp -r /ocean/projects/agr250001p/shared/tutorial-data/tutorial_1_data/ .
@@ -110,7 +111,7 @@ seqtk sample -s100 SRR16574651_2.fastq 0.5 > CRC_2.fastq
 
  Align the sequencing reads to the reference genome using Bowtie2:
 ``` bash
-module load bowtie
+module load bowtie2
 ``` 
  
 - For our the helathy genome (NC)
