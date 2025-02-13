@@ -25,7 +25,7 @@ ssh your-username@bridges2.psc.edu
 ```
 To avoid a slurm script we are going to use interact:
 ``` bash
-interact -t 3:00:00 --ntasks-per-node=16  --mem=31G
+interact -t 6:00:00 --ntasks-per-node=16  --mem=31G
 ```
 The reference genome has been provided for you guys for effeciency, but if you were to download your own reference genome you would follow the steps below:
 
