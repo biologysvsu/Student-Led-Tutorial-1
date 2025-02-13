@@ -150,7 +150,7 @@ samtools flagstat sorted-NC.bam
    ```
    3. Please note where you will be locally dowloading these files.
 
- We now need to downlaod the files to our computers for them to be used in IGV.
+ We now need to download the files to our computers for them to be used in IGV.
  ``` bash
 scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam .
 ``` 
