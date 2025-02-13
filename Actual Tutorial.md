@@ -40,6 +40,8 @@ To avoid a slurm script we are going to use interact:
 ``` bash
 interact -t 3:00:00 –-ntasks-per-node=16  --mem=31G
 ```
+The reference genome has been provided for you guys for effeciency, but if you wer to download your own reference genome you would follow the steps below:
+**FOR YOUR KNOWLEDGE BUT WE ARE GOING TO JUMP TO COPYING THIS FILES FROM THE SHARED TUTORIAL 1 REPOSITORY**
 ``` bash
 cd /ocean/projects/agr250001p/your-psc-username
 ```
@@ -75,9 +77,7 @@ Stage 2A CRC Donor Example:
 ``` bash
 fastq-dump --split-files SRR16574651
 ```
--If working with your own Replace SRR with your SRR acession of your sample and do for both samples.
-
-
+**HERE IS WHERE WE WILL PICK BACK UP**
 SLURM:
 Edit the slurm script to include your email, username, and SRR acession number in the appropriate spots like we have done in class before. The code to edit:
 ``` bash
