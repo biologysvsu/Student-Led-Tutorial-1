@@ -46,7 +46,7 @@ The reference genome has been provided for you guys for effeciency, but if you w
 ``` bash
 cd /ocean/projects/agr250001p/your-psc-username
 ```
-Download the refrence genome (FASTA)
+Download the reference genome (FASTA)
 ``` bash
 wget https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.alt.fa.gz
 ```
@@ -85,7 +85,7 @@ fastq-dump --split-files SRR16574651
 
 1. Navigate to:
     ``` bash
-    cd /oceean/projects/agr250001p/your-username
+    cd /ocean/projects/agr250001p/your-username
      ``` 
 2. Now enter this to copy the necessary files:
    ``` bash
@@ -114,7 +114,7 @@ seqtk sample -s100 SRR16574651_2.fastq 0.5 > CRC_2.fastq
 module load bowtie2
 ``` 
  
-- For our the helathy genome (NC)
+- For our the healthy genome (NC)
 ``` bash
 bowtie2 --very-fast-local -p 16 -x human_bowtie_reference -1 NC_1.fastq -2 NC_2.fastq -S NC.sam
 ```
@@ -161,10 +161,10 @@ samtools flagstat sorted-NC.bam
 
  We now need to downlaod the files to our computers for them to be used in IGV.
  ``` bash
-scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam .
+scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/tutorial_1_data/sorted-sample.bam .
 ``` 
 ``` bash
-scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/sorted-sample.bam.bai .
+scp your-username@bridges2.psc.edu:/ocean/projects/agr250001p/your-username/tutorial_1_data/sorted-sample.bam.bai .
 ```
 Here you will have to change the "sorted-sample" to the sorted-NC and sorted-CRC.
 
