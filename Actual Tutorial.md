@@ -41,6 +41,7 @@ To avoid a slurm script we are going to use interact:
 interact -t 3:00:00 –-ntasks-per-node=16  --mem=31G
 ```
 The reference genome has been provided for you guys for effeciency, but if you wer to download your own reference genome you would follow the steps below:
+
 **FOR YOUR KNOWLEDGE BUT WE ARE GOING TO JUMP TO COPYING THIS FILES FROM THE SHARED TUTORIAL 1 REPOSITORY**
 ``` bash
 cd /ocean/projects/agr250001p/your-psc-username
