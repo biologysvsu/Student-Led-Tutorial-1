@@ -85,7 +85,13 @@ fastq-dump --split-files SRR16574651
    
 
 # Mapping Reads
-
+# MAKE SURE YOU HAVE SEQTK SETUP IN YOUR ENVIRONMENT
+- First, add the `seqtk` file to your `PATH` using the following lines of code:
+  ```bash
+  echo 'export PATH=/ocean/projects/agr250001p/shared/software/seqtk:$PATH' >> ~/.bashrc
+  source ~/.bashrc
+  ```
+# NOW YOU CAN USE SEQTK
   Process a subset of each dataset with Bowtie2. Repeat for both healthy (NC) and cancer (CRC) donors:
 ``` bash
 seqtk sample -s100 SRR16574675_1.fastq 0.5 > NC_1.fastq
