@@ -57,9 +57,9 @@ gunzip Homo_sapiens.GRCh38.dna.alt.fa.gz
    - Following this link (https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/) will show other refrence genomes that can be used.
    - Also need to download two sequencing reads. These can be searched for through https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186573
    - It shows publically avalable wgs-sew datasets from GEO.
-You can chose your own, but we provided examples here for your conveinence.
+You can choose your own, but we provided examples here for your conveinence.
 
-If you were to chose your own:
+If you were to ch-ose your own:
 - Scroll down from the link page and hit 'SRA run selector'
    The table shown includes GSM samples, giving information such as sample accessions (begin with gsm) and metadata like age, sex, and health condition.
    One sample for this tutorial should be a healthy donor (NC)
