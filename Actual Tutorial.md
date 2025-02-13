@@ -42,7 +42,7 @@ interact -t 3:00:00 –-ntasks-per-node=16  --mem=31G
 ```
 The reference genome has been provided for you guys for effeciency, but if you wer to download your own reference genome you would follow the steps below:
 
-**FOR YOUR KNOWLEDGE BUT WE ARE GOING TO JUMP TO COPYING THIS FILES FROM THE SHARED TUTORIAL 1 REPOSITORY**
+**hERE ARE THE STEPS BUT THEY HAVE ALREADY BEEN DONE FOR YOU SO WE ARE GONNA JUMP AHEAD**
 ``` bash
 cd /ocean/projects/agr250001p/your-psc-username
 ```
@@ -78,27 +78,8 @@ Stage 2A CRC Donor Example:
 ``` bash
 fastq-dump --split-files SRR16574651
 ```
+
 **HERE IS WHERE WE WILL PICK BACK UP**
-SLURM:
-Edit the slurm script to include your email, username, and SRR acession number in the appropriate spots like we have done in class before. The code to edit:
-``` bash
-vi sra-download.slurm
-```
-You will also need to change the output name for each dataset
-Navigate to the directory where the script is located (if not already there):
-``` bash
-cd /path/to/your/script
-```
-Submit the job to the SLURM scheduler:
-``` bash
-sbatch sra-download.slurm
-```
-
-Once the job completes, check the output log file:
-``` bash
-cat/ocean/projects/agr250001p/your-username/download_sra.log
-``` 
-
 
 # Index the reference genome using Bowtie2:
 
